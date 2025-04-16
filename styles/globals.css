@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @import "tailwindcss";
 
-:root {
+@theme {
   --font-display: "Satoshi", "sans-serif";
 
   --breakpoint-3xl: 1920px;
@@ -14,8 +14,13 @@
   --color-avocado-600: oklch(0.53 0.12 118.34);
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
-  --vercel-pink: oklch(0.65 0.2603 2.47);
+  --color-vercel-pink: oklch(0.65 0.2603 2.47);
+  --color-vercel-blue: oklch(0.57 0.2145 258.25);
+  --color-vercel-cyan: oklch(0.83 0.1333 174.96);
+  --color-vercel-orange: oklch(0.78 0.1587 72.99);
+  --color-vercel-violet: oklch(0.49 0.2275 300.45);
 }
+
 .spinner {
   background: conic-gradient(transparent 10deg, white, transparent 320deg);
 
