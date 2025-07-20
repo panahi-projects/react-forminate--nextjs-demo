@@ -95,12 +95,12 @@ const ConsoleViewer: React.FC = () => {
   }, [logs]);
 
   return (
-    <div className="relative my-4">
+    <div className="relative mt-4 mb-0">
       {/* Terminal Label */}
       <div className="absolute -top-2 left-4 bg-[#0d0d0d] px-2 text-xs font-bold tracking-wide text-gray-400">
         console.log
       </div>
-      <div className="overflow-hidden rounded-md border border-gray-700 bg-[#0d0d0d] py-4 font-mono text-sm shadow-md">
+      <div className="overflow-hidden rounded-md border border-neutral-950 bg-neutral-900 py-4 font-mono text-sm shadow-md">
         {/* Terminal Body */}
         <div
           ref={scrollRef}

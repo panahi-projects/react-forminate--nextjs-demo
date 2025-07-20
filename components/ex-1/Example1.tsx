@@ -22,7 +22,7 @@ const formData: FormDataCollectionType = {
       validation: [
         {
           pattern: "^\\S+@\\S+\\.\\S+$",
-          message: "Invalid email format",
+          // message: "Invalid email format",
         },
       ],
     },
