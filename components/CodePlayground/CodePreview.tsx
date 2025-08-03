@@ -10,6 +10,7 @@ interface CodePreviewProps {
   code: string;
   component: React.ReactNode;
   title?: string;
+  focusedTitle?: string;
   maxHeight?: string;
 }
 
@@ -17,6 +18,7 @@ export function CodePreview({
   code,
   component,
   title,
+  focusedTitle,
   maxHeight = "32rem",
 }: CodePreviewProps) {
   const [activeTab, setActiveTab] = useState<"code" | "preview">("preview");
@@ -31,7 +33,14 @@ export function CodePreview({
     <div className="my-2 overflow-hidden rounded-lg border border-neutral-900">
       {title && (
         <div className="border-b border-neutral-800 bg-neutral-950 px-4 py-2">
-          <h3 className="font-mono text-sm text-gray-400">{title}</h3>
+          <h3 className="font-mono text-sm text-gray-400">
+            {title}
+            {focusedTitle && (
+              <span className="text-vercel-orange pl-2 font-semibold">
+                {focusedTitle}
+              </span>
+            )}
+          </h3>
         </div>
       )}
 
