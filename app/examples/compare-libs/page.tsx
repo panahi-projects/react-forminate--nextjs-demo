@@ -22,7 +22,6 @@ export default function CompareLibsPage() {
           code={SignupReactForminateCode}
           component={<SignupReactForminate />}
           title="React-Forminate Signup Form"
-          focusedTitle="(90 lines)"
         />
         <LinkBadge href="https://github.com/panahi-projects/react-forminate--nextjs-demo/blob/main/components/CompareLibs/SignupReactForminate.tsx" />
       </section>
@@ -35,7 +34,6 @@ export default function CompareLibsPage() {
           code={SignupReactHookFormCode}
           component={<SignupReactHookForm />}
           title="React-Hook-Form Signup Form"
-          focusedTitle="(162 lines)"
         />
         <LinkBadge href="https://github.com/panahi-projects/react-forminate--nextjs-demo/blob/main/components/CompareLibs/SignupReactHookForm.tsx" />
       </section>
@@ -46,7 +44,6 @@ export default function CompareLibsPage() {
           code={SignupReactHookFormCode}
           component={<SignupFormik />}
           title="Formik Signup Form"
-          focusedTitle="(162 lines)"
         />
         <LinkBadge href="https://github.com/panahi-projects/react-forminate--nextjs-demo/blob/main/components/CompareLibs/SignupFormik.tsx" />
       </section>

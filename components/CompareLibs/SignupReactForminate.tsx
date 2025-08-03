@@ -180,5 +180,4 @@ export default function SignupReactForminate() {
   };
 
   return <DynamicForm formData={formData} onSubmit={onSubmit} />;
-}
-`;
+}`;
