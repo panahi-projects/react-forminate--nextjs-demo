@@ -1,5 +1,6 @@
 "use client";
 
+import { Logo } from "#/components";
 import { demos, type Item } from "#/lib/demos";
 import { LinkStatus } from "#/ui/link-status";
 import { NextLogoDark } from "#/ui/next-logo";
@@ -21,12 +22,12 @@ export function GlobalNav() {
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
         >
-          <div className="h-7 w-7 rounded-full">
-            <NextLogoDark />
+          <div className="h-9 w-9 rounded-full">
+            <Logo width={60} height={60} />
           </div>
 
           <h3 className="font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
-            App Router
+            React-Forminate Demo
           </h3>
         </Link>
       </div>

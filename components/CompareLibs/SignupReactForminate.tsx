@@ -1,12 +1,8 @@
 "use client";
-import {
-  BaseField,
-  DynamicForm,
-  FormDataCollectionType,
-} from "react-forminate";
+import { DynamicForm, FormDataCollectionType } from "react-forminate";
 
 export default function SignupReactForminate() {
-  const commonStyling: Partial<BaseField> = {
+  const commonStyling = {
     disableDefaultStyling: true,
     className:
       "w-full px-3 py-2 border border-neutral-800 rounded-md bg-neutral-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
@@ -30,6 +26,7 @@ export default function SignupReactForminate() {
             message: "Must be 15 characters or less",
           },
         ],
+        placeholder: "First name",
         ...commonStyling,
       },
       {
@@ -43,6 +40,7 @@ export default function SignupReactForminate() {
             message: "Must be 20 characters or less",
           },
         ],
+        placeholder: "Last name",
         ...commonStyling,
       },
       {
@@ -51,6 +49,7 @@ export default function SignupReactForminate() {
         label: "Email Address",
         required: true,
         validation: [{ type: "email", message: "Invalid email address" }],
+        placeholder: "Email",
         ...commonStyling,
       },
       {
@@ -59,6 +58,7 @@ export default function SignupReactForminate() {
         label: "Password",
         required: true,
         validation: [{ type: "password" }],
+        placeholder: "Password",
         ...commonStyling,
       },
       {
@@ -66,6 +66,7 @@ export default function SignupReactForminate() {
         type: "password",
         label: "Confirm Password",
         required: true,
+        placeholder: "Confirm Password",
         validation: [
           {
             type: "equalTo",
@@ -89,14 +90,11 @@ export default function SignupReactForminate() {
   return <DynamicForm formData={formData} onSubmit={onSubmit} />;
 }
 
-export const SignupReactForminateCode = `import {
-  BaseField,
-  DynamicForm,
-  FormDataCollectionType,
-} from "react-forminate";
+//Code to be shown in the editor:
+export const SignupReactForminateCode = `import { DynamicForm, FormDataCollectionType } from "react-forminate";
 
 export default function SignupReactForminate() {
-  const commonStyling: Partial<BaseField> = {
+  const commonStyling = {
     disableDefaultStyling: true,
     className:
       "w-full px-3 py-2 border border-neutral-800 rounded-md bg-neutral-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
@@ -120,6 +118,7 @@ export default function SignupReactForminate() {
             message: "Must be 15 characters or less",
           },
         ],
+        placeholder: "First name",
         ...commonStyling,
       },
       {
@@ -133,6 +132,7 @@ export default function SignupReactForminate() {
             message: "Must be 20 characters or less",
           },
         ],
+        placeholder: "Last name",
         ...commonStyling,
       },
       {
@@ -141,6 +141,7 @@ export default function SignupReactForminate() {
         label: "Email Address",
         required: true,
         validation: [{ type: "email", message: "Invalid email address" }],
+        placeholder: "Email",
         ...commonStyling,
       },
       {
@@ -149,6 +150,7 @@ export default function SignupReactForminate() {
         label: "Password",
         required: true,
         validation: [{ type: "password" }],
+        placeholder: "Password",
         ...commonStyling,
       },
       {
@@ -156,6 +158,7 @@ export default function SignupReactForminate() {
         type: "password",
         label: "Confirm Password",
         required: true,
+        placeholder: "Confirm Password",
         validation: [
           {
             type: "equalTo",

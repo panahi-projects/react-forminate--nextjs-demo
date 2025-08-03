@@ -2,6 +2,7 @@ import { CodePreview } from "#/components/CodePlayground";
 import SignupReactForminate, {
   SignupReactForminateCode,
 } from "#/components/CompareLibs/SignupReactForminate";
+import SignupReactHookForm from "#/components/CompareLibs/SignupReactHookForm";
 
 export default function CompareLibsPage() {
   return (
@@ -11,6 +12,11 @@ export default function CompareLibsPage() {
         code={SignupReactForminateCode}
         component={<SignupReactForminate />}
         title="React-Forminate Signup Form"
+      />
+      <CodePreview
+        code={SignupReactForminateCode}
+        component={<SignupReactHookForm />}
+        title="React-Hook-Form Signup Form"
       />
     </div>
   );
