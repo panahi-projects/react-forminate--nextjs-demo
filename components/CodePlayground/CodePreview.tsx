@@ -28,7 +28,7 @@ export function CodePreview({
   }, []);
 
   return (
-    <div className="my-6 overflow-hidden rounded-lg border border-neutral-900">
+    <div className="my-2 overflow-hidden rounded-lg border border-neutral-900">
       {title && (
         <div className="border-b border-neutral-800 bg-neutral-950 px-4 py-2">
           <h3 className="font-mono text-sm text-gray-400">{title}</h3>
@@ -39,7 +39,7 @@ export function CodePreview({
         <button
           className={`px-4 py-2 text-sm font-medium ${
             activeTab === "preview"
-              ? "text-vercel-orange bg-neutral-800"
+              ? "text-vercel-cyan bg-neutral-800"
               : "bg-neutral-950 hover:text-white"
           }`}
           onClick={() => setActiveTab("preview")}
@@ -49,7 +49,7 @@ export function CodePreview({
         <button
           className={`px-4 py-2 text-sm font-medium ${
             activeTab === "code"
-              ? "text-vercel-orange bg-neutral-800"
+              ? "text-vercel-cyan bg-neutral-800"
               : "bg-neutral-950 hover:text-white"
           }`}
           onClick={() => setActiveTab("code")}

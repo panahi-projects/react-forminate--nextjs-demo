@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { Suspense } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import React, { Suspense } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 function Params() {
   const searchParams = useSearchParams()!;
@@ -56,13 +56,13 @@ export function AddressBar() {
       </div>
       <div className="flex gap-x-1 text-sm font-medium">
         <div>
-          <span className="px-2 text-gray-400">acme.com</span>
+          <span className="px-2 text-gray-400">react-forminate</span>
         </div>
         {pathname ? (
           <>
             <span className="text-gray-600">/</span>
             {pathname
-              .split('/')
+              .split("/")
               .slice(2)
               .map((segment) => {
                 return (

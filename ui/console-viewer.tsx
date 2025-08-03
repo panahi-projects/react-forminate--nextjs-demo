@@ -104,7 +104,7 @@ const ConsoleViewer: React.FC = () => {
         {/* Terminal Body */}
         <div
           ref={scrollRef}
-          className="scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent h-60 space-y-1 overflow-y-auto p-4 text-white"
+          className="scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent h-28 space-y-1 overflow-y-auto p-4 text-white"
         >
           {logs}
         </div>
